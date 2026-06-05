@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hefaistos | Herrería y Construcción </title>
+    <title>Hefaistos | Herrería & Construcción</title>
     <style>
-        /* Estilo Corporativo y Serio */
+        /* Paleta de colores basada en el logo Hefaistos (Gris metal, Naranja fuego y Blanco) */
         body {
-            background-color: #0f172a; /* Fondo oscuro elegante */
-            color: #f8fafc;
+            background-color: #1e1e24; /* Gris metalizado oscuro */
+            color: #f5f5f7; /* Blanco pulido */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            /* Bloquea la selección de texto en CSS */
+            /* Bloquea la selección de texto */
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
         header {
-            background-color: #1e293b;
-            padding: 20px;
+            background-color: #111115; /* Fondo de cabecera más oscuro para contraste */
+            padding: 30px 20px;
             text-align: center;
-            border-bottom: 2px solid #38bdf8;
+            border-bottom: 4px solid #e65c00; /* Línea naranja fuego */
+        }
+        .logo-container img {
+            max-width: 220px; /* Tamaño ideal para tu logo en celular */
+            height: auto;
+            margin-bottom: 10px;
+            pointer-events: none; /* Evita que arrastren el logo */
+        }
+        header h1 {
+            color: #f5f5f7;
+            margin: 5px 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: #d1d1d6;
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .container {
             max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
+        }
+        h2 { 
+            color: #e65c00; /* Título secundario en naranja */
+            border-left: 4px solid #e65c00;
+            padding-left: 10px;
         }
         .grid {
             display: grid;
@@ -36,80 +60,100 @@
             margin-top: 20px;
         }
         .card {
-            background-color: #1e293b;
+            background-color: #2a2a32; /* Gris metal medio para las tarjetas */
             border-radius: 8px;
             overflow: hidden;
-            border: 1px solid #334155;
-            transition: transform 0.3s;
+            border: 1px solid #3a3a45;
+            transition: transform 0.3s, border-color 0.3s;
         }
         .card:hover {
             transform: translateY(-5px);
+            border-color: #e65c00; /* Resalta en naranja al pasar el dedo/cursor */
         }
         .card img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
-            pointer-events: none; /* Evita que arrastren la imagen */
+            pointer-events: none; /* Protección de imagen */
         }
         .card-content {
-            padding: 15px;
+            padding: 20px;
         }
-        h1, h2 { color: #38bdf8; }
-        footer { text-align: center; padding: 20px; color: #64748b; }
+        .card-content h3 {
+            color: #e65c00;
+            margin-top: 0;
+        }
+        .card-content p {
+            color: #d1d1d6;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        footer { 
+            text-align: center; 
+            padding: 30px; 
+            color: #8e8e93; 
+            background-color: #111115;
+            margin-top: 60px;
+            border-top: 1px solid #3a3a45;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Hefaistos 
-            Herrería y Construcción</h1>
-        <p>Soluciones de alta calidad.</p>
+        <div class="logo-container">
+            <!-- PASO 1: Aquí vas a pegar el link de tu logo cuando lo subas a ImgBB -->
+            <img src="https://via.placeholder.com/220x220?text=Logo+Hefaistos" alt="Logo HEFAISTOS">
+        </div>
+        <h1>HEFAISTOS</h1>
+        <p>Herrería & Construcción</p>
     </header>
 
     <div class="container">
-        <h2>Mi Portafolio de Trabajo</h2>
-        <p>A continuación se muestran algunos casos de éxito. Todo el contenido está protegido por derechos de autor.</p>
+        <h2>Proyectos Destacados y Casos de Éxito</h2>
+        <p>Trabajos estructurales y de diseño bajo estrictas normas de calidad. Contenido protegido.</p>
         
         <div class="grid">
-            <!-- Tarjeta de Proyecto 1 -->
+            <!-- Proyecto 1 -->
             <div class="card">
-                <!-- Reemplaza con tu imagen (usa marcas de agua siempre) -->
-                <img src="https://via.placeholder.com/400x250" alt="Proyecto Protegido">
+                <!-- PASO 2: Aquí pones la foto de tu primer trabajo -->
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+1" alt="Proyecto Hefaistos">
                 <div class="card-content">
-                    <h3>Caso de Éxito Alfa</h3>
-                    <p>Descripción seria del problema que resolviste y los resultados obtenidos para el cliente.</p>
+                    <h3>Estructuras Metálicas Residenciales</h3>
+                    <p>Diseño, soldadura y montaje de estructuras de alta resistencia. Adaptado a las necesidades del cliente con acabados de primera.</p>
                 </div>
             </div>
 
-            <!-- Tarjeta de Proyecto 2 -->
+            <!-- Proyecto 2 -->
             <div class="card">
-                <img src="https://via.placeholder.com/400x250" alt="Proyecto Protegido">
+                <!-- PASO 3: Aquí pones la foto de tu segundo trabajo -->
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+2" alt="Proyecto Hefaistos">
                 <div class="card-content">
-                    <h3>Desarrollo Corporativo Beta</h3>
-                    <p>Optimización de procesos y diseño estratégico personalizado.</p>
+                    <h3>Herrería de Obra Fina</h3>
+                    <p>Portones, barandas y detalles arquitectónicos a medida. Combinando técnicas tradicionales de forja con tecnología moderna de corte y soldadura.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Pablo Hernandez. Todos los derechos reservados. Prohibida la reproducción total o parcial.</p>
+        <p>&copy; 2026 HEFAISTOS Herrería & Construcción. Todos los derechos reservados.</p>
+        <p style="font-size: 11px; color: #555;">Prohibida la copia o reproducción del material visual de este portafolio.</p>
     </footer>
 
-    <!-- SCRIPT DE SEGURIDAD -->
+    <!-- SCRIPT DE SEGURIDAD INDESTRUCTIBLE -->
     <script>
-        // 1. Bloquear clic derecho
+        // Bloquear clic derecho
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-            alert("Contenido protegido por derechos de autor.");
         });
 
-        // 2. Bloquear combinaciones de teclas para clonar o inspeccionar (Ctrl+U, Ctrl+S, F12)
+        // Bloquear teclas de inspección en computadoras
         document.addEventListener('keydown', function(e) {
-            if (e.keyCode == 123 || // F12
-                (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
-                (e.ctrlKey && e.keyCode == 85) || // Ctrl+U (Ver código)
-                (e.ctrlKey && e.keyCode == 83)) { // Ctrl+S (Guardar página)
+            if (e.keyCode == 123 || 
+                (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
+                (e.ctrlKey && e.keyCode == 85) || 
+                (e.ctrlKey && e.keyCode == 83)) { 
                 e.preventDefault();
                 return false;
             }
