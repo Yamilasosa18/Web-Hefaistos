@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hefaistos | Herrería & Construcción</title>
+    <!-- Iconos simples -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            /* Degradé lineal hacia abajo: Negro absoluto -> Gris metalizado oscuro -> Toque de Naranja Hefaistos al final */
             background: linear-gradient(180deg, #000000 0%, #1c1c22 60%, #401a00 100%);
-            background-attachment: fixed; /* Mantiene el degradé fijo mientras deslizas */
+            background-attachment: fixed;
             color: #f5f5f7;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
             user-select: none;
         }
-        header {
-            background-color: #000000; /* Cabecera en negro puro para que combine con el logo */
-            padding: 30px 20px;
+        /* Nueva franja de contacto */
+        .top-bar {
+            background-color: #000000;
+            padding: 10px;
             text-align: center;
-            border-bottom: 4px solid #e65c00; /* Tu franja naranja */
+            font-size: 14px;
+            border-bottom: 1px solid #333;
+        }
+        .top-bar a {
+            color: #d1d1d6;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header {
+            background-color: #000000;
+            padding: 30px 20px 20px 20px;
+            text-align: center;
+        }
+        /* Degradé personalizado para la franja */
+        .linea-degrade {
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(90deg, #e65c00, #a84500);
         }
         .logo-container img {
-            max-width: 240px;
+            max-width: 260px;
             height: auto;
-            margin-bottom: 10px;
             pointer-events: none;
-        }
-        header h1 {
-            color: #f5f5f7;
-            margin: 5px 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-        }
-        header p {
-            color: #a1a1a6;
-            margin: 5px 0 0 0;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
         .container {
             max-width: 1000px;
@@ -60,98 +62,65 @@
             margin-top: 20px;
         }
         .card {
-            /* Tarjetas con fondo oscuro semitransparente para que se note el degradé de atrás */
-            background-color: rgba(17, 17, 21, 0.85); 
+            background-color: rgba(17, 17, 21, 0.85);
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid #2a2a35;
-            transition: transform 0.3s, border-color 0.3s;
-            backdrop-filter: blur(5px); /* Efecto esmerilado moderno */
+            transition: transform 0.3s;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #e65c00;
-        }
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            pointer-events: none;
-        }
-        .card-content {
-            padding: 20px;
-        }
-        .card-content h3 {
-            color: #e65c00;
-            margin-top: 0;
-        }
-        .card-content p {
-            color: #d1d1d6;
-            font-size: 14px;
-            line-height: 1.5;
-        }
+        .card:hover { transform: translateY(-5px); border-color: #e65c00; }
+        .card img { width: 100%; height: 220px; object-fit: cover; pointer-events: none; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: #e65c00; margin-top: 0; }
+        .card-content p { color: #d1d1d6; font-size: 14px; line-height: 1.5; }
         footer { 
-            text-align: center; 
-            padding: 40px 20px; 
-            color: #666666; 
-            background-color: #000000;
-            margin-top: 60px;
-            border-top: 1px solid #22222a;
+            text-align: center; padding: 40px 20px; color: #666666; 
+            background-color: #000000; margin-top: 60px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Barra de Contacto -->
+    <div class="top-bar">
+        <a href="tel:+59897063970"><i class="fas fa-phone"></i> Celular</a> |
+        <a href="https://www.facebook.com/share/1W64D6iD9E/"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="mailto:metalurpape@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+
     <header>
         <div class="logo-container">
-            <!-- Usa la imagen guardada en tu repositorio -->
             <img src="file_00000000a8c8720eb0da3a1fe39bb17e.png" alt="Logo HEFAISTOS">
         </div>
     </header>
+    <div class="linea-degrade"></div> <!-- Tu nueva franja con degradé -->
 
     <div class="container">
-        <h2>Proyectos Destacados y Casos de Éxito</h2>
-        <p>Trabajos estructurales y de diseño bajo estrictas normas de calidad. Contenido protegido.</p>
-        
+        <h2>Proyectos Destacados</h2>
         <div class="grid">
-            <!-- Proyecto 1 -->
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+1" alt="Proyecto Hefaistos">
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+1" alt="Proyecto">
                 <div class="card-content">
-                    <h3>Estructuras Metálicas Residenciales</h3>
-                    <p>Diseño, soldadura y montaje de estructuras de alta resistencia. Adaptado a las necesidades del cliente con acabados de primera.</p>
+                    <h3>Estructuras Metálicas</h3>
+                    <p>Diseño y montaje de alta resistencia con acabados profesionales.</p>
                 </div>
             </div>
-
-            <!-- Proyecto 2 -->
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+2" alt="Proyecto Hefaistos">
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+2" alt="Proyecto">
                 <div class="card-content">
-                    <h3>Herrería de Obra Fina</h3>
-                    <p>Portones, barandas y detalles arquitectónicos a medida. Combinando técnicas tradicionales de forja con tecnología moderna de corte y soldadura.</p>
+                    <h3>Herrería de Obra</h3>
+                    <p>Portones y cerramientos a medida con técnicas de forja.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 HEFAISTOS Herrería & Construcción. Todos los derechos reservados.</p>
-        <p style="font-size: 11px; color: #444;">Prohibida la copia, descarga o reproducción del material visual de este portafolio profesional.</p>
+        <p>&copy; 2026 HEFAISTOS Herrería & Construcción.</p>
     </footer>
 
     <script>
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.keyCode == 123 || 
-                (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
-                (e.ctrlKey && e.keyCode == 85) || 
-                (e.ctrlKey && e.keyCode == 83)) { 
-                e.preventDefault();
-                return false;
-            }
-        });
+        document.addEventListener('contextmenu', e => e.preventDefault());
     </script>
 </body>
 </html>
