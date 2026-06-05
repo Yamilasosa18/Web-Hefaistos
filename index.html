@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hefaistos | Herrería & Construcción</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(180deg, #000000 0%, #1c1c22 60%, #401a00 100%);
+            background-attachment: fixed;
+            color: #f5f5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        .top-bar {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #333;
+        }
+        .top-bar a { color: #d1d1d6; text-decoration: none; margin: 0 10px; }
+        
+        /* AQUÍ ESTÁ EL TRUCO: Tu imagen ahora es el fondo del encabezado */
+        header { 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('20260322_095141.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 60px 20px; 
+            text-align: center; 
+        }
+        
+        .linea-degrade { height: 4px; width: 100%; background: linear-gradient(90deg, #e65c00, #a84500); }
+        
+        /* El contenedor del logo ahora tiene un fondo semitransparente oscuro opcional para resaltar el logo */
+        .logo-container img { 
+            max-width: 260px; 
+            height: auto; 
+            pointer-events: none;
+            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.8)); /* Le da sombra al logo para que resalte sobre la foto */
+        }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+        h2 { color: #e65c00; border-left: 4px solid #e65c00; padding-left: 10px; margin-bottom: 20px; }
 
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        .card { background-color: rgba(17, 17, 21, 0.85); border-radius: 12px; overflow: hidden; border: 1px solid #2a2a35; }
+        .card img { width: 100%; height: 220px; object-fit: cover; pointer-events: none; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: #e65c00; margin-top: 0; }
+        .card-content p { color: #d1d1d6; font-size: 14px; line-height: 1.5; }
+        
+        footer { text-align: center; padding: 40px 20px; color: #666666; background-color: #000000; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="tel:+59800000000"><i class="fas fa-phone"></i> Celular</a> |
+        <a href="https://facebook.com/tuperfil"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="mailto:tuemail@ejemplo.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="file_00000000a8c8720eb0da3a1fe39bb17e.png" alt="Logo HEFAISTOS">
+        </div>
+    </header>
+    <div class="linea-degrade"></div>
+
+    <div class="container">
+        <h2>Proyectos Destacados</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+1" alt="Proyecto">
+                <div class="card-content">
+                    <h3>Estructuras Metálicas</h3>
+                    <p>Diseño y montaje de alta resistencia con acabados profesionales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Trabajo+2" alt="Proyecto">
+                <div class="card-content">
+                    <h3>Herrería de Obra</h3>
+                    <p>Portones y cerramientos a medida con técnicas de forja.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 HEFAISTOS Herrería & Construcción.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+</body>
+</html>
