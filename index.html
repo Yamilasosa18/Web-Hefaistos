@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Servicios Profesionales</title>
+    <style>
+        /* Estilo Corporativo y Serio */
+        body {
+            background-color: #0f172a; /* Fondo oscuro elegante */
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Bloquea la selección de texto en CSS */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            pointer-events: none; /* Evita que arrastren la imagen */
+        }
+        .card-content {
+            padding: 15px;
+        }
+        h1, h2 { color: #38bdf8; }
+        footer { text-align: center; padding: 20px; color: #64748b; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ESTUDIO PROFESIONAL</h1>
+        <p>Soluciones de alta calidad y propiedad intelectual protegida</p>
+    </header>
+
+    <div class="container">
+        <h2>Mi Portafolio de Trabajo</h2>
+        <p>A continuación se muestran algunos casos de éxito. Todo el contenido está protegido por derechos de autor.</p>
+        
+        <div class="grid">
+            <!-- Tarjeta de Proyecto 1 -->
+            <div class="card">
+                <!-- Reemplaza con tu imagen (usa marcas de agua siempre) -->
+                <img src="https://via.placeholder.com/400x250" alt="Proyecto Protegido">
+                <div class="card-content">
+                    <h3>Caso de Éxito Alfa</h3>
+                    <p>Descripción seria del problema que resolviste y los resultados obtenidos para el cliente.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" alt="Proyecto Protegido">
+                <div class="card-content">
+                    <h3>Desarrollo Corporativo Beta</h3>
+                    <p>Optimización de procesos y diseño estratégico personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tu Nombre. Todos los derechos reservados. Prohibida la reproducción total o parcial.</p>
+    </footer>
+
+    <!-- SCRIPT DE SEGURIDAD -->
+    <script>
+        // 1. Bloquear clic derecho
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert("Contenido protegido por derechos de autor.");
+        });
+
+        // 2. Bloquear combinaciones de teclas para clonar o inspeccionar (Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode == 123 || // F12
+                (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+                (e.ctrlKey && e.keyCode == 85) || // Ctrl+U (Ver código)
+                (e.ctrlKey && e.keyCode == 83)) { // Ctrl+S (Guardar página)
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>
