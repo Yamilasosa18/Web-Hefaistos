@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hefaistos | Herrería & Construcción</title>
     <style>
-        /* Diseño Corporativo Premium en Fondo Negro */
         body {
-            background-color: #000000; /* Fondo negro absoluto */
-            color: #f5f5f7; /* Texto blanco pulido */
+            /* Degradé lineal hacia abajo: Negro absoluto -> Gris metalizado oscuro -> Toque de Naranja Hefaistos al final */
+            background: linear-gradient(180deg, #000000 0%, #1c1c22 60%, #401a00 100%);
+            background-attachment: fixed; /* Mantiene el degradé fijo mientras deslizas */
+            color: #f5f5f7;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            /* Bloquea la selección de texto para evitar plagios */
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
         header {
-            background-color: #0a0a0a; /* Cabecera casi negra para sutil contraste */
+            background-color: #000000; /* Cabecera en negro puro para que combine con el logo */
             padding: 30px 20px;
             text-align: center;
-            border-bottom: 4px solid #e65c00; /* Línea naranja de tu logo */
+            border-bottom: 4px solid #e65c00; /* Tu franja naranja */
         }
         .logo-container img {
-            max-width: 240px; /* Tamaño ideal en móviles */
+            max-width: 240px;
             height: auto;
             margin-bottom: 10px;
-            border-radius: 8px; /* Suaviza los bordes si el logo mantiene fondo blanco */
-            pointer-events: none; /* Protege el logo para que no lo arrastren */
+            pointer-events: none;
         }
         header h1 {
             color: #f5f5f7;
@@ -50,7 +49,7 @@
             padding: 20px;
         }
         h2 { 
-            color: #e65c00; /* Títulos en el naranja de Hefaistos */
+            color: #e65c00;
             border-left: 4px solid #e65c00;
             padding-left: 10px;
         }
@@ -61,21 +60,23 @@
             margin-top: 20px;
         }
         .card {
-            background-color: #111115; /* Gris casi negro metálico para resaltar del fondo */
+            /* Tarjetas con fondo oscuro semitransparente para que se note el degradé de atrás */
+            background-color: rgba(17, 17, 21, 0.85); 
             border-radius: 12px;
             overflow: hidden;
-            border: 1px solid #22222a;
+            border: 1px solid #2a2a35;
             transition: transform 0.3s, border-color 0.3s;
+            backdrop-filter: blur(5px); /* Efecto esmerilado moderno */
         }
         .card:hover {
             transform: translateY(-5px);
-            border-color: #e65c00; /* El borde brilla en naranja al pasar el cursor/dedo */
+            border-color: #e65c00;
         }
         .card img {
             width: 100%;
             height: 220px;
             object-fit: cover;
-            pointer-events: none; /* Protección anti-robo para tus fotos */
+            pointer-events: none;
         }
         .card-content {
             padding: 20px;
@@ -93,7 +94,7 @@
             text-align: center; 
             padding: 40px 20px; 
             color: #666666; 
-            background-color: #0a0a0a;
+            background-color: #000000;
             margin-top: 60px;
             border-top: 1px solid #22222a;
         }
@@ -103,8 +104,8 @@
 
     <header>
         <div class="logo-container">
-            <!-- Apunta directamente al archivo subido en tu GitHub -->
-            <img src="file_00000000a8c8720eb0da3a1fe39bb17e.png"Logo HEFAISTOS">
+            <!-- Usa la imagen guardada en tu repositorio -->
+            <img src="file_00000000a8c8720eb0da3a1fe39bb17e.png" alt="Logo HEFAISTOS">
         </div>
         <h1>HEFAISTOS</h1>
         <p>Herrería & Construcción</p>
@@ -115,7 +116,7 @@
         <p>Trabajos estructurales y de diseño bajo estrictas normas de calidad. Contenido protegido.</p>
         
         <div class="grid">
-            <!-- Tarjeta de Proyecto 1 -->
+            <!-- Proyecto 1 -->
             <div class="card">
                 <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+1" alt="Proyecto Hefaistos">
                 <div class="card-content">
@@ -124,7 +125,7 @@
                 </div>
             </div>
 
-            <!-- Tarjeta de Proyecto 2 -->
+            <!-- Proyecto 2 -->
             <div class="card">
                 <img src="https://via.placeholder.com/400x250?text=Trabajo+Protegido+2" alt="Proyecto Hefaistos">
                 <div class="card-content">
@@ -140,14 +141,10 @@
         <p style="font-size: 11px; color: #444;">Prohibida la copia, descarga o reproducción del material visual de este portafolio profesional.</p>
     </footer>
 
-    <!-- SCRIPT DE SEGURIDAD MÓVIL Y ESCRITORIO -->
     <script>
-        // Desactivar menú de clic derecho y pulsación larga en celulares
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
-
-        // Bloquear atajos para inspeccionar código (F12, Ctrl+U, etc.)
         document.addEventListener('keydown', function(e) {
             if (e.keyCode == 123 || 
                 (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
